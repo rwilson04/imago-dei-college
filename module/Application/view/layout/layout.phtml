@@ -1,0 +1,178 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="image/ico" href="/images/favicon.ico">
+	<meta charset="utf-8">
+	<title>
+		Imago Dei College
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" charset="utf-8">
+
+	$(document).ready(function() {
+		$('.contact').click(function() {
+			$('html, body').animate({
+				scrollTop: $(document).height()
+			}, 1500);
+			return false;
+		});
+
+		$('.about').click(function() {
+			$('html, body').animate({
+				scrollTop: '960px'
+			}, 1500);
+			return false;
+		});
+
+		$('.mentoring').click(function() {
+			$('html, body').animate({
+				scrollTop: '1260px'
+			}, 1500);
+			return false;
+		});
+
+		$('.friday-night').click(function() {
+			$('html, body').animate({
+				scrollTop: '1560px'
+			}, 1500);
+			return false;
+		});
+
+
+		$('.top').click(function() {
+			$('html, body').animate({
+				scrollTop: '0px'
+			}, 1500);
+			return false;
+		});
+	});
+
+
+	//You can also add a new function to a new class that can scroll to anywhere on the page//&#8203;
+
+
+
+	</script> 
+
+
+	<!-- Le styles -->
+	<!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
+	<?php echo $this->headLink()->prependStylesheet($this->basePath() . '/css/bootstrap.css'); ?>
+	<!-- <link href="/css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+	<!-- scripts -->
+	<?php echo $this->headScript()->prependFile("https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"); ?>
+	<?php echo $this->headScript()->prependFile($this->basePath() . '/js/bootstrap.min.js'); ?>
+	<?php //echo $this->headScript()->->prependFile($this->basePath() . '/js/bootstrap.js'); ?>
+
+
+
+	<style>
+	body { 
+		padding-top: 60px;
+		background-image:url('/images/subtle-pattern-10.jpg');
+		background-repeat:repeat-x;
+	}
+
+	/* Carousel base class */
+	.carousel {
+		margin-bottom: 20px;
+	}
+
+	.carousel .container {
+		position: relative;
+		z-index: 9;
+	}
+
+	.carousel-control {
+
+		margin-top: 40px;
+	}
+
+	.carousel .item {
+		height: 600px;
+	}
+	.carousel img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 600px;
+	}
+
+	.carousel-caption {
+		background-color: transparent;
+		position: static;
+		max-width: 550px;
+		padding: 0 20px;
+		margin-top: 200px;
+	}
+	.carousel-caption h1,
+	.carousel-caption .lead {
+		margin: 0;
+		line-height: 1.25;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	}
+	.carousel-caption .btn {
+		margin-top: 10px;
+	}
+
+	.accordion-heading {
+		border-bottom: 0;
+		background-color: aliceBlue;
+	} 
+
+	</style>
+
+
+
+
+	<style type="text/css"></style>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand top" href="#l">
+				Imago Dei College
+			</a>
+			<ul class="nav">
+				<li>
+				<a class="about" href="#">
+					About
+				</a>
+				</li>
+				<li>
+				<a class="mentoring" href="#">
+					Mentoring
+				</a>
+				</li>
+				<li>
+				<a class="friday-night" href="#">
+					Friday Night
+				</a>
+				</li>
+				<li>
+				<a class="contact" href="#">
+					Contact              </a>
+				</li>
+				<!-- <li><a href="blog">Blog</a></li>  -->
+			</ul>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+	<?php echo $this->content; ?>
+</div>
+<?php echo $this->inlineScript() ?>
+</body></html>
+
+
+
+
+
