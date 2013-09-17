@@ -1,0 +1,17 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand top" href="/">Back to Imago Dei College</a>
+		</div>
+	</div>
+</div>
+<?php
+if (!empty($this->email))
+{
+	echo "email submitted:$email";
+}
+elseif (!empty($this->error))
+{
+	echo $this->error;
+}
+?>

@@ -1,0 +1,56 @@
+<?php $this->headTitle()->prepend("Application"); ?>
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand top" href="/">Back to Imago Dei College</a>
+		</div>
+	</div>
+</div>
+	
+<?php if ($this->form): ?>
+	<h1>
+		College Mentor Application
+	</h1>
+	<div class="form-description">
+	OUR BROAD MISSION is to communicate the Christian gospel so that the doubtful student can find it plausible and so that the believing student's whole life can be transformed through an expanding love for Jesus.
+
+	IMAGO DEI COLLEGE is a community of people who want collect with Portland college students to engage with Christian truths, interacting with the questions college students are asking today and giving guidance where it is needed. Students in Portland need a venue for thinking about the larger questions in life, such as the meaning of our existence, the problems of suffering, or explorations of spirituality.
+
+	IMAGO DEI COLLEGE MENTORS follow Jesus and learn from Him, hear His teaching, see how He interacted with people, see His conduct, and so on.  Mentors see how the Apostle Paul exhorts the church in Corinth to imitate him just as he is imitating Christ (1 Cor. 11:1).  He sets himself up as an admittedly imperfect, secondary model to follow whose prototype is Christ.  This element of visibility―of being available for observation and interaction―is a crucial element which the church must strive to foster in its corporate life, both indirectly in the stories of the faithful, and directly in dynamic relationships between the mature and those who are in need of extra guidance and care.  This is not due to the inherent goodness of relationships (though they are certainly good) as much as to a frank admission of human weakness and God’s gracious empowerment of believers to function in this manner.
+	</div>
+
+	<?php echo $this->form()->openTag($form); ?>
+	<span class="form-section">Contact</span>
+	<?php echo $this->formRow($this->form->get('name')); ?>
+	<?php echo $this->formRow($this->form->get('email')); ?>
+	<?php echo $this->formRow($this->form->get('birthdate')); ?>
+	<?php echo $this->formRow($this->form->get('phone')); ?>
+	<?php echo $this->formRow($this->form->get('employer')); ?>
+	<?php echo $this->formRow($this->form->get('address')); ?>
+	<span class="form-section">Personal Information and Experience</span>
+	<?php echo $this->formRow($this->form->get('maritalStatus')); ?>
+	<?php 
+	//$conditions = $this->form->get('healthConditions');
+	//echo '<pre>';
+	//print_r($conditions);	
+	//echo $this->formLabel($conditions);	
+	//foreach ($conditions as $
+	//echo $this->formInput($conditions);	
+	//echo $this->formElementErrors($conditions);	
+	////echo $this->formRow($this->form->get('healthConditions')); 
+	////echo $this->formRow($this->form->get('healthConditions')); 
+	?>
+	<span class="form-section">Safety/Security</span>
+	<span class="form-section">Personal References</span>
+	<span class="form-section">Reference 1</span>
+	<span class="form-section">Reference 2</span>
+	<span class="form-section">Reference 3</span>
+	<span class="form-section">Previous Churches</span>
+	<span class="form-section">Reference Waiver & Application Process Agreement</span>
+	<?php echo $this->formRow($this->form->get('submit')); ?>
+	<?php echo $this->form()->closeTag($form); ?>
+
+<?php elseif ($this->success === true): ?>
+	Submitted successfully
+<?php endif; ?>
+

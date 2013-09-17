@@ -1,0 +1,140 @@
+/* 
+---------------
+Elements
+---------------
+*/
+body {  
+	padding-top: 60px;
+    padding-bottom: 40px;
+	background-image:url('/images/subtle-pattern-10.jpg');
+	background-repeat:repeat-x;
+}
+
+/*submit buttons should go below other form elements, not adjacent/after*/
+form input[type="submit"]
+{
+	display:block;
+}
+
+
+/* 
+---------------
+IDs
+---------------
+*/
+
+
+
+/* 
+---------------
+Classes
+---------------
+*/
+
+/* add asterisk to all labels with "required" class */
+label.required:after
+{
+	content:" *";
+}
+
+/* change attributes of error messages (ul>li after form field with validation error) */
+.input-error ~ ul>li
+{
+	color:red;
+}
+
+/* Carousel base class */
+.carousel {
+	margin-bottom: 20px;
+}
+
+.carousel .container {
+	position: relative;
+	z-index: 9;
+}
+
+.carousel-control {
+
+	margin-top: 40px;
+}
+
+.carousel .item { 
+	height: 600px;
+}
+.carousel img {
+	position: absolute;
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	height: 600px;
+}
+
+.carousel-caption {
+	background-color: transparent;
+	position: static; 
+	max-width: 550px;
+	padding: 0 20px; 
+	margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead { 
+	margin: 0;
+	line-height: 1.25;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+	margin-top: 10px;
+}
+
+.accordion-heading {
+	border-bottom: 0;
+	background-color: aliceBlue;
+} 
+
+.zf-green {
+    color: #68b604;
+}
+
+.btn-success {
+  background-color: #57a900;
+  background-image: -moz-linear-gradient(top, #70d900, #57a900);
+  background-image: -ms-linear-gradient(top, #70d900, #57a900);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
+  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
+  background-image: -o-linear-gradient(top, #70d900, #57a900);
+  background-image: linear-gradient(top, #70d900, #57a900);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: #57a900;
+}
+
+.btn-success:active, .btn-success.active {
+  background-color: #57a900;
+}
+
+.form-description
+{
+	white-space:pre-wrap;
+	white-space:moz-pre-wrap;
+	word-wrap: break-word;
+	margin-bottom:2em;
+}
+
+.form-section
+{
+	display:block;
+	padding:5px;
+	margin-top:15px;
+	margin-bottom:15px;
+	width:100%;
+	font-size:large;
+	background-color:#DDD;
+}
+
